@@ -87,11 +87,18 @@ const audio = document.getElementById('audio');
 const musicBtn = document.getElementById('music');
 audio.preload = 'metadata';
 audio.addEventListener('loadedmetadata', () => { musicBtn.hidden = false; });
+const playMusic = () => audio.play().catch(() => {});
 musicBtn.addEventListener('click', () => {
-  if (audio.paused) audio.play(); else audio.pause();
+  if (audio.paused) playMusic(); else audio.pause();
 });
-audio.addEventListener('play', () => musicBtn.classList.add('playing'));
-audio.addEventListener('pause', () => musicBtn.classList.remove('playing'));
+audio.addEventListener('play', () => {
+  musicBtn.classList.add('playing', 'compact');
+  musicBtn.setAttribute('aria-label', 'Pausar música');
+});
+audio.addEventListener('pause', () => {
+  musicBtn.classList.remove('playing');
+  musicBtn.setAttribute('aria-label', 'Tocar música');
+});
 
 // Confete
 const canvas = document.getElementById('confetti');
@@ -140,6 +147,7 @@ function launchConfetti() {
 
 document.getElementById('celebrate').addEventListener('click', (e) => {
   launchConfetti();
+  if (audio.paused) playMusic();
   e.currentTarget.textContent = 'Parabéns! 🎉';
   if (navigator.vibrate) navigator.vibrate(80);
 });
