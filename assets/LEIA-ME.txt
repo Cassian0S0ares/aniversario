@@ -1,0 +1,8 @@
+Coloque as fotos nesta pasta (assets/) com estes nomes (formato .jpg):
+
+capa.jpg              -> foto principal (vertical fica melhor no celular)
+momento-1.jpg ... momento-5.jpg  -> linha do tempo (horizontal, 4:3)
+galeria-1.jpg ... galeria-8.jpg  -> galeria
+
+Enquanto a foto não existir, aparece um quadro cinza com o nome dela.
+Dica: reduza as fotos para ~1600px no lado maior para o site carregar rápido.

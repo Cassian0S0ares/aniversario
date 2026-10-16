@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1c1712">
+  <title>Feliz Aniversário, Pai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ CAPA ============ -->
+  <header class="hero" id="inicio">
+    <div class="hero__photo">
+      <img src="assets/capa.jpg" alt="Foto do meu pai" data-placeholder="Foto de capa">
+    </div>
+    <div class="hero__content">
+      <p class="eyebrow">16 de outubro</p>
+      <h1 class="hero__title">Feliz aniversário,<br><em>Amigão!</em></h1>
+      <p class="hero__lead">Uma pequena homenagem para o homem que eu mais admiro.</p>
+      <a href="#mensagem" class="scroll-hint" aria-label="Rolar para a mensagem">
+        <span></span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ MENSAGEM ============ -->
+    <section class="section" id="mensagem">
+      <p class="eyebrow">Uma carta</p>
+      <h2 class="section__title">Para você</h2>
+      <div class="letter reveal">
+        <p class="letter__greeting">Pai, feliz aniversário!</p>
+
+        <p class="letter__first">Hoje é um dia para celebrar você e tudo o que representa na minha vida. Só tenho a agradecer por tudo o que já fez por mim, pelo apoio que nunca faltou e por ser a pessoa que eu admiro e quero me tornar um dia.</p>
+
+        <p>Obrigado por estar presente em todas as fases da minha vida, desde quando me ensinou a andar de bike até hoje, quando continua me apoiando em cada passo.</p>
+
+        <p>Obrigado também pelos jogos que você me levou para assistir e por todos os momentos que a gente passa junto. Saiba que cada um deles é especial para mim e fica guardado com carinho.</p>
+
+        <blockquote class="letter__highlight">Mesmo não morando tão perto, quero que você saiba que eu te amo demais e que a distância nunca muda o que sinto por você.</blockquote>
+
+        <p>Que esse novo ano venha com saúde, alegria e muitas conquistas. Você merece o melhor.</p>
+
+        <p class="letter__sign">Com amor,<br><span>Cassiano</span></p>
+      </div>
+    </section>
+
+
+    <!-- ============ GALERIA ============ -->
+    <section class="section section--tint" id="galeria">
+      <p class="eyebrow">Galeria</p>
+      <h2 class="section__title">Retratos</h2>
+      <p class="section__hint">Toque numa foto para ampliar</p>
+      <div class="gallery">
+        <!-- Adicione/remova itens à vontade. Use class="tall" ou "wide" para variar o tamanho. -->
+        <button class="gallery__item tall"><img src="assets/galeria-1.jpg" alt="" data-placeholder="Foto 1" loading="lazy"></button>
+        <button class="gallery__item"><img src="assets/galeria-2.jpg" alt="" data-placeholder="Foto 2" loading="lazy" style="object-position: 40% 30%"></button>
+        <button class="gallery__item"><img src="assets/galeria-3.jpg" alt="" data-placeholder="Foto 3" loading="lazy" style="object-position: 60% 50%"></button>
+        <button class="gallery__item wide"><img src="assets/galeria-4.jpg" alt="" data-placeholder="Foto 4" loading="lazy" style="object-position: 60% 40%"></button>
+        <button class="gallery__item"><img src="assets/galeria-5.jpg" alt="" data-placeholder="Foto 5" loading="lazy" style="object-position: 45% 45%"></button>
+        <!-- Vídeo curto (antigo GIF): toca sozinho, sem som, em loop -->
+        <button class="gallery__item tall"><video src="assets/galeria-6.mp4" poster="assets/galeria-6-poster.jpg" autoplay muted loop playsinline preload="metadata"></video></button>
+        <button class="gallery__item"><img src="assets/galeria-7.jpg" alt="" data-placeholder="Foto 7" loading="lazy" style="object-position: 50% 35%"></button>
+        <button class="gallery__item wide"><img src="assets/galeria-8.jpg" alt="" data-placeholder="Foto 8" loading="lazy" style="object-position: 70% 50%"></button>
+        <button class="gallery__item wide"><img src="assets/galeria-9.jpg" alt="" data-placeholder="Foto 9" loading="lazy" style="object-position: 50% 35%"></button>
+      </div>
+    </section>
+
+    <!-- ============ RECADOS ============ -->
+    <section class="section" id="recados">
+      <p class="eyebrow">Recados</p>
+      <h2 class="section__title">Quem te ama</h2>
+
+      <div class="notes" aria-roledescription="carrossel">
+        <figure class="note">
+          <blockquote>“Escreva aqui o recado de alguém da família.”</blockquote>
+          <figcaption>— Mãe</figcaption>
+        </figure>
+        <figure class="note">
+          <blockquote>“Outro recado carinhoso.”</blockquote>
+          <figcaption>— Filho(a)</figcaption>
+        </figure>
+        <figure class="note">
+          <blockquote>“Mais um recado.”</blockquote>
+          <figcaption>— Neto(a)</figcaption>
+        </figure>
+        <figure class="note">
+          <blockquote>“Um recado de um amigo.”</blockquote>
+          <figcaption>— Amigo</figcaption>
+        </figure>
+      </div>
+      <div class="notes__dots" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ FINAL ============ -->
+    <section class="finale" id="final">
+      <p class="eyebrow">Hoje é o seu dia</p>
+      <h2 class="finale__title">Parabéns,<br><em>Pai!</em></h2>
+      <p>Obrigado por tudo. Te amamos.</p>
+      <button class="btn" id="celebrate">Soprar as velinhas 🎂</button>
+    </section>
+
+  </main>
+
+  <!-- Música (opcional): coloque um arquivo em audio/musica.mp3 -->
+  <button class="music" id="music" aria-label="Tocar música" hidden>
+    <span class="music__icon">♪</span>
+  </button>
+  <audio id="audio" src="audio/musica.mp3" loop preload="none"></audio>
+
+  <!-- Lightbox da galeria -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" aria-label="Fechar">×</button>
+    <img alt="">
+    <video muted loop playsinline controls hidden></video>
+  </div>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
